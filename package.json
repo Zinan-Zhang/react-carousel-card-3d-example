@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "react-carousel-card-3d-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,9 @@
     "build": "react-scripts build"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "react": "^18.2.0",
-    "react-carousel-card-3d": "^0.1.6",
+    "react-carousel-card-3d": "^0.1.9",
     "react-dom": "^18.2.0",
     "react-scripts": "^2.1.3",
     "react-spring": "^9.5.5"

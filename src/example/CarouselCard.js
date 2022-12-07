@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
+import SquareBorder1 from "./image/square-border1.png";
+
 function Card({ title, image, currentSlide, currentIndex }: any) {
   const [show, setShown] = useState(false);
 
@@ -23,9 +25,17 @@ function Card({ title, image, currentSlide, currentIndex }: any) {
           position: "relative",
         }}
       >
+        <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+          <img
+            src={SquareBorder1}
+            alt="SquareBorder1"
+            style={{ objectFit: "fill", width: "100%", height: "100%" }}
+          />
+        </div>
+
         <div
           style={{
-            p: 2,
+            padding: 16,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -40,17 +50,16 @@ function Card({ title, image, currentSlide, currentIndex }: any) {
               position: "relative",
             }}
           >
-            <image
+            <img
               src={image}
               alt="image"
-              fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           </div>
           {title && (
             <div
               style={{
-                mt: 3,
+                marginTop: 24,
                 fontWeight: 600,
                 fontSize: 28,
                 lineHeight: "150%",
