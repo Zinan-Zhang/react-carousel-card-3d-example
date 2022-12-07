@@ -52,7 +52,7 @@ function Card({ title, image, currentSlide, currentIndex }: any) {
           >
             <img
               src={image}
-              alt="image"
+              alt="title"
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           </div>
